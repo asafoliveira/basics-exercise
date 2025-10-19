@@ -11,8 +11,7 @@ jobs:
       - name: Lint
         run: npm run lint 
   test:
-    runs-on: ubuntu-latest
-    steps:
+  steps:
       - name: Get Code
         uses: actions/checkout@v5
       - name: Install Dependencies
@@ -20,8 +19,7 @@ jobs:
       - name: Unit Tests
         run: npm run test 
   deploy:
-    runs-on: ubuntu-latest
-    steps:
+  steps:
       - name: Get Code
         uses: actions/checkout@v5
       - name: Install Dependencies
